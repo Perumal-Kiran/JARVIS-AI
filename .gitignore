@@ -1,7 +1,27 @@
-.gradle/
+# Node / Vite
+node_modules/
+dist/
+release/
+*.log
+.vite/
+
+# Electron / packaging
+out/
+*.exe
+*.blockmap
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
 .idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Legacy Android/Gradle generated files
+.gradle/
 local.properties
 /build/
 **/build/
 *.iml
-.DS_Store
