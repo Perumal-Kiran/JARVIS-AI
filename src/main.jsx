@@ -103,7 +103,7 @@ function App() {
           <div className="model-row">
             <label htmlFor="model-choice">LOCAL AI MODEL</label>
             <select id="model-choice" value={status.modelAvailable ? status.model : ''} onChange={chooseModel} disabled={!status.connected || !status.models.length}>
-              {!status.models.length && <option value="">{status.connected ? 'No models installed' : 'Ollama offline'}</option>}
+              <option value="">{status.connected ? 'Choose an installed model' : 'Ollama offline'}</option>
               {status.models.map((model) => <option key={model} value={model}>{model}</option>)}
             </select>
           </div>
